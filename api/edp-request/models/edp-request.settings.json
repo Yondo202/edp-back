@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "edp_requests",
+  "info": {
+    "name": "edp-request",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name_comp": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "biginteger"
+    },
+    "maininfo": {
+      "model": "maininfo"
+    }
+  }
+}

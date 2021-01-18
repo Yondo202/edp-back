@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "one_twos",
+  "info": {
+    "name": "one_two"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "parent_id": {
+      "type": "biginteger"
+    }
+  }
+}

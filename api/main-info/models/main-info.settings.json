@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "one_one",
+  "info": {
+    "name": "one_one",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "comp_name": {
+      "type": "string"
+    },
+    "comp_response": {
+      "type": "string"
+    },
+    "invest": {
+      "type": "string"
+    },
+    "register": {
+      "type": "biginteger"
+    },
+    "main_direction": {
+      "type": "string"
+    },
+    "help_direction": {
+      "type": "string"
+    },
+    "help_direction2": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "export_start_date": {
+      "type": "date"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "text"
+    },
+    "history": {
+      "type": "text"
+    },
+    "revenue": {
+      "type": "biginteger"
+    },
+    "workpeople_num": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "social_acc": {
+      "type": "string"
+    },
+    "top_product1": {
+      "type": "string"
+    },
+    "top_product2": {
+      "type": "string"
+    },
+    "add_desc": {
+      "type": "richtext"
+    }
+  }
+}

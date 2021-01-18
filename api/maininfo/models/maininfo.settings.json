@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "maininfos",
+  "info": {
+    "name": "maininfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "parent_id": {
+      "type": "biginteger"
+    },
+    "one_one": {
+      "model": "main-info"
+    },
+    "one_two": {
+      "model": "one-two"
+    }
+  }
+}

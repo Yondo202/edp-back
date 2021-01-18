@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "one_two_ones",
+  "info": {
+    "name": "one_two_one"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "product": {
+      "type": "string"
+    },
+    "percent": {
+      "type": "string"
+    },
+    "odd": {
+      "type": "text"
+    },
+    "weakness": {
+      "type": "text"
+    }
+  }
+}
