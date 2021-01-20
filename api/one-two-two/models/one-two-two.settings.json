@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "one_two_ones",
+  "collectionName": "one_two_twos",
   "info": {
-    "name": "one_two_one"
+    "name": "one_two_two"
   },
   "options": {
     "increments": true,
@@ -10,20 +10,14 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "product": {
+    "rival": {
       "type": "string"
     },
-    "percent": {
+    "export": {
       "type": "string"
-    },
-    "odd": {
-      "type": "text"
-    },
-    "weakness": {
-      "type": "text"
     },
     "one_two": {
-      "via": "one_two_ones",
+      "via": "one_two_twos",
       "model": "one-two"
     }
   }

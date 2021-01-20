@@ -535,8 +535,110 @@
           "id": {
             "type": "string"
           },
+          "one_two_ones": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "string"
+                },
+                "percent": {
+                  "type": "string"
+                },
+                "odd": {
+                  "type": "string"
+                },
+                "weakness": {
+                  "type": "string"
+                },
+                "one_two": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "one_two_twos": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rival": {
+                  "type": "string"
+                },
+                "export": {
+                  "type": "string"
+                },
+                "one_two": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "parent_id": {
-            "type": "integer"
+            "type": "string"
+          },
+          "maininfo": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "one_ones": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_twos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -546,8 +648,23 @@
       },
       "NewOne-two": {
         "properties": {
+          "one_two_ones": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "one_two_twos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "parent_id": {
-            "type": "integer"
+            "type": "string"
+          },
+          "maininfo": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

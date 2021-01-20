@@ -594,6 +594,40 @@
           "add_desc": {
             "type": "string"
           },
+          "maininfo": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "one_ones": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_twos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -659,6 +693,9 @@
             "type": "string"
           },
           "add_desc": {
+            "type": "string"
+          },
+          "maininfo": {
             "type": "string"
           },
           "published_at": {

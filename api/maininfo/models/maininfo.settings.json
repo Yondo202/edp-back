@@ -11,14 +11,20 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "one_ones": {
+      "unique": true,
+      "columnName": "one_one",
+      "collection": "main-info",
+      "via": "maininfo"
+    },
+    "one_twos": {
+      "unique": true,
+      "columnName": "one_two",
+      "collection": "one-two",
+      "via": "maininfo"
+    },
     "parent_id": {
-      "type": "biginteger"
-    },
-    "one_one": {
-      "model": "main-info"
-    },
-    "one_two": {
-      "model": "one-two"
+      "type": "string"
     }
   }
 }

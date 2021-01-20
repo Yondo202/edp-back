@@ -67,6 +67,10 @@
     },
     "add_desc": {
       "type": "richtext"
+    },
+    "maininfo": {
+      "via": "one_ones",
+      "model": "maininfo"
     }
   }
 }

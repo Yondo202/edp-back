@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/maininfos": {
+    "/one-two-twos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Maininfo"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Maininfo"
+          "One-two-two"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Maininfo"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Maininfo"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewMaininfo"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/maininfos/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Maininfo"
+          "One-two-two"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewOne-two-two"
+              }
+            }
+          }
+        }
       }
     },
-    "/maininfos/{id}": {
+    "/one-two-twos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Maininfo"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Maininfo"
+          "One-two-two"
+        ],
+        "parameters": []
+      }
+    },
+    "/one-two-twos/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "One-two-two"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Maininfo"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Maininfo"
+          "One-two-two"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMaininfo"
+                "$ref": "#/components/schemas/NewOne-two-two"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Maininfo"
+          "One-two-two"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Maininfo": {
+      "One-two-two": {
         "required": [
           "id"
         ],
@@ -522,130 +535,48 @@
           "id": {
             "type": "string"
           },
-          "one_ones": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "comp_name": {
-                  "type": "string"
-                },
-                "comp_response": {
-                  "type": "string"
-                },
-                "invest": {
-                  "type": "string"
-                },
-                "register": {
-                  "type": "integer"
-                },
-                "main_direction": {
-                  "type": "string"
-                },
-                "help_direction": {
-                  "type": "string"
-                },
-                "help_direction2": {
-                  "type": "string"
-                },
-                "start_date": {
-                  "type": "string"
-                },
-                "export_start_date": {
-                  "type": "string"
-                },
-                "vision": {
-                  "type": "string"
-                },
-                "purpose": {
-                  "type": "string"
-                },
-                "history": {
-                  "type": "string"
-                },
-                "revenue": {
-                  "type": "integer"
-                },
-                "workpeople_num": {
-                  "type": "integer"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "social_acc": {
-                  "type": "string"
-                },
-                "top_product1": {
-                  "type": "string"
-                },
-                "top_product2": {
-                  "type": "string"
-                },
-                "add_desc": {
-                  "type": "string"
-                },
-                "maininfo": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "one_twos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "one_two_ones": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "one_two_twos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "parent_id": {
-                  "type": "string"
-                },
-                "maininfo": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "parent_id": {
+          "rival": {
             "type": "string"
+          },
+          "export": {
+            "type": "string"
+          },
+          "one_two": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "one_two_ones": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_two_twos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "maininfo": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -653,21 +584,15 @@
           }
         }
       },
-      "NewMaininfo": {
+      "NewOne-two-two": {
         "properties": {
-          "one_ones": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "rival": {
+            "type": "string"
           },
-          "one_twos": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "export": {
+            "type": "string"
           },
-          "parent_id": {
+          "one_two": {
             "type": "string"
           },
           "published_at": {
@@ -684,9 +609,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Maininfo"
-    }
-  ]
+  "tags": []
 }
