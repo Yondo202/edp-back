@@ -547,42 +547,8 @@
           "weakness": {
             "type": "string"
           },
-          "one_two": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "one_two_ones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "one_two_twos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "parent_id": {
-                "type": "string"
-              },
-              "maininfo": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "parent_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -604,8 +570,8 @@
           "weakness": {
             "type": "string"
           },
-          "one_two": {
-            "type": "string"
+          "parent_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",

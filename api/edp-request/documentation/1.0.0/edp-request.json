@@ -549,20 +549,14 @@
               "id": {
                 "type": "string"
               },
-              "one_ones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "one_one": {
+                "type": "string"
               },
-              "one_twos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "one_two": {
+                "type": "string"
               },
               "parent_id": {
-                "type": "string"
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"

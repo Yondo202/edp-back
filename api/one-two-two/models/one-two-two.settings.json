@@ -15,10 +15,6 @@
     },
     "export": {
       "type": "string"
-    },
-    "one_two": {
-      "via": "one_two_twos",
-      "model": "one-two"
     }
   }
 }

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "one_two_ones",
   "info": {
-    "name": "one_two_one"
+    "name": "one_two_one",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -22,9 +23,8 @@
     "weakness": {
       "type": "text"
     },
-    "one_two": {
-      "via": "one_two_ones",
-      "model": "one-two"
+    "parent_id": {
+      "type": "biginteger"
     }
   }
 }

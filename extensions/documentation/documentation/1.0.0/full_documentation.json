@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/20/2021 6:28:16 PM"
+    "x-generation-date": "01/21/2021 4:52:36 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5299,20 +5299,14 @@
               "id": {
                 "type": "string"
               },
-              "one_ones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "one_one": {
+                "type": "string"
               },
-              "one_twos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "one_two": {
+                "type": "string"
               },
               "parent_id": {
-                "type": "string"
+                "type": "integer"
               },
               "published_at": {
                 "type": "string"
@@ -5421,39 +5415,8 @@
           "add_desc": {
             "type": "string"
           },
-          "maininfo": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "one_ones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "one_twos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "parent_id": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "parent_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5522,8 +5485,8 @@
           "add_desc": {
             "type": "string"
           },
-          "maininfo": {
-            "type": "string"
+          "parent_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5545,130 +5508,115 @@
           "id": {
             "type": "string"
           },
-          "one_ones": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "comp_name": {
-                  "type": "string"
-                },
-                "comp_response": {
-                  "type": "string"
-                },
-                "invest": {
-                  "type": "string"
-                },
-                "register": {
-                  "type": "integer"
-                },
-                "main_direction": {
-                  "type": "string"
-                },
-                "help_direction": {
-                  "type": "string"
-                },
-                "help_direction2": {
-                  "type": "string"
-                },
-                "start_date": {
-                  "type": "string"
-                },
-                "export_start_date": {
-                  "type": "string"
-                },
-                "vision": {
-                  "type": "string"
-                },
-                "purpose": {
-                  "type": "string"
-                },
-                "history": {
-                  "type": "string"
-                },
-                "revenue": {
-                  "type": "integer"
-                },
-                "workpeople_num": {
-                  "type": "integer"
-                },
-                "email": {
-                  "type": "string"
-                },
-                "social_acc": {
-                  "type": "string"
-                },
-                "top_product1": {
-                  "type": "string"
-                },
-                "top_product2": {
-                  "type": "string"
-                },
-                "add_desc": {
-                  "type": "string"
-                },
-                "maininfo": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "one_one": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "comp_name": {
+                "type": "string"
+              },
+              "comp_response": {
+                "type": "string"
+              },
+              "invest": {
+                "type": "string"
+              },
+              "register": {
+                "type": "integer"
+              },
+              "main_direction": {
+                "type": "string"
+              },
+              "help_direction": {
+                "type": "string"
+              },
+              "help_direction2": {
+                "type": "string"
+              },
+              "start_date": {
+                "type": "string"
+              },
+              "export_start_date": {
+                "type": "string"
+              },
+              "vision": {
+                "type": "string"
+              },
+              "purpose": {
+                "type": "string"
+              },
+              "history": {
+                "type": "string"
+              },
+              "revenue": {
+                "type": "integer"
+              },
+              "workpeople_num": {
+                "type": "integer"
+              },
+              "email": {
+                "type": "string"
+              },
+              "social_acc": {
+                "type": "string"
+              },
+              "top_product1": {
+                "type": "string"
+              },
+              "top_product2": {
+                "type": "string"
+              },
+              "add_desc": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "integer"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "one_twos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "one_two_ones": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "one_two_twos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "parent_id": {
-                  "type": "string"
-                },
-                "maininfo": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "one_two": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "one_two_ones": {
+                "type": "string"
+              },
+              "one_two_twos": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "integer"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
           "parent_id": {
-            "type": "string"
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5678,20 +5626,14 @@
       },
       "NewMaininfo": {
         "properties": {
-          "one_ones": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "one_one": {
+            "type": "string"
           },
-          "one_twos": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "one_two": {
+            "type": "string"
           },
           "parent_id": {
-            "type": "string"
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5725,42 +5667,8 @@
           "weakness": {
             "type": "string"
           },
-          "one_two": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "one_two_ones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "one_two_twos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "parent_id": {
-                "type": "string"
-              },
-              "maininfo": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "parent_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5782,8 +5690,8 @@
           "weakness": {
             "type": "string"
           },
-          "one_two": {
-            "type": "string"
+          "parent_id": {
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
@@ -5811,43 +5719,6 @@
           "export": {
             "type": "string"
           },
-          "one_two": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "one_two_ones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "one_two_twos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "parent_id": {
-                "type": "string"
-              },
-              "maininfo": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5860,9 +5731,6 @@
             "type": "string"
           },
           "export": {
-            "type": "string"
-          },
-          "one_two": {
             "type": "string"
           },
           "published_at": {
@@ -5886,77 +5754,6 @@
             "type": "string"
           },
           "one_two_ones": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "product": {
-                  "type": "string"
-                },
-                "percent": {
-                  "type": "string"
-                },
-                "odd": {
-                  "type": "string"
-                },
-                "weakness": {
-                  "type": "string"
-                },
-                "one_two": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "one_two_twos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "rival": {
-                  "type": "string"
-                },
-                "export": {
-                  "type": "string"
-                },
-                "one_two": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "parent_id": {
-            "type": "string"
-          },
-          "maininfo": {
             "required": [
               "id"
             ],
@@ -5964,19 +5761,44 @@
               "id": {
                 "type": "string"
               },
-              "one_ones": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "product": {
+                "type": "string"
               },
-              "one_twos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+              "percent": {
+                "type": "string"
+              },
+              "odd": {
+                "type": "string"
+              },
+              "weakness": {
+                "type": "string"
               },
               "parent_id": {
+                "type": "integer"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "one_two_twos": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "rival": {
+                "type": "string"
+              },
+              "export": {
                 "type": "string"
               },
               "published_at": {
@@ -5990,6 +5812,9 @@
               }
             }
           },
+          "parent_id": {
+            "type": "integer"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5999,22 +5824,13 @@
       "NewOne-two": {
         "properties": {
           "one_two_ones": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "string"
           },
           "one_two_twos": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "string"
           },
           "parent_id": {
-            "type": "string"
-          },
-          "maininfo": {
-            "type": "string"
+            "type": "integer"
           },
           "published_at": {
             "type": "string",
