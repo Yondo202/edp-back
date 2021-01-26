@@ -12,13 +12,23 @@
   },
   "attributes": {
     "one_two_ones": {
-      "collection": "one-two-one"
+      "collection": "one-two-one",
+      "via": "one_two"
     },
     "one_two_twos": {
-      "collection": "one-two-two"
+      "collection": "one-two-two",
+      "via": "one_two"
+    },
+    "one_two_threes": {
+      "via": "one_two",
+      "collection": "one-two-three"
     },
     "parent_id": {
-      "type": "biginteger"
+      "type": "string"
+    },
+    "maininfo": {
+      "model": "maininfo",
+      "via": "one_two"
     }
   }
 }

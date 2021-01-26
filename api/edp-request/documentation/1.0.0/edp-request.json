@@ -555,8 +555,11 @@
               "one_two": {
                 "type": "string"
               },
+              "edp_request": {
+                "type": "string"
+              },
               "parent_id": {
-                "type": "integer"
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

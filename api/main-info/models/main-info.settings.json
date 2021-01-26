@@ -69,7 +69,11 @@
       "type": "richtext"
     },
     "parent_id": {
-      "type": "biginteger"
+      "type": "string"
+    },
+    "maininfo": {
+      "via": "one_one",
+      "model": "maininfo"
     }
   }
 }

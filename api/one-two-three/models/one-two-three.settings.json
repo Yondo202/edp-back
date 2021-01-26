@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "one_two_twos",
+  "collectionName": "one_two_threes",
   "info": {
-    "name": "one_two_two",
+    "name": "one_two_three",
     "description": ""
   },
   "options": {
@@ -11,18 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "rival": {
-      "type": "string"
-    },
-    "export": {
-      "type": "string"
-    },
     "parent_id": {
       "type": "string"
     },
     "one_two": {
-      "via": "one_two_twos",
-      "model": "one-two"
+      "model": "one-two",
+      "via": "one_two_threes"
+    },
+    "competitor": {
+      "type": "string"
     }
   }
 }

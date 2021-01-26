@@ -18,6 +18,7 @@
       "type": "biginteger"
     },
     "maininfo": {
+      "via": "edp_request",
       "model": "maininfo"
     }
   }

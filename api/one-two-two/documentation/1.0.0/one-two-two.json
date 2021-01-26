@@ -541,6 +541,52 @@
           "export": {
             "type": "string"
           },
+          "parent_id": {
+            "type": "string"
+          },
+          "one_two": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "one_two_ones": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_two_twos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_two_threes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "maininfo": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -553,6 +599,12 @@
             "type": "string"
           },
           "export": {
+            "type": "string"
+          },
+          "parent_id": {
+            "type": "string"
+          },
+          "one_two": {
             "type": "string"
           },
           "published_at": {

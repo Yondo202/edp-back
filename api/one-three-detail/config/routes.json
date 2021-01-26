@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/one-three-details",
+      "handler": "one-three-detail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-three-details/count",
+      "handler": "one-three-detail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-three-details/:id",
+      "handler": "one-three-detail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/one-three-details",
+      "handler": "one-three-detail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/one-three-details/:id",
+      "handler": "one-three-detail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/one-three-details/:id",
+      "handler": "one-three-detail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

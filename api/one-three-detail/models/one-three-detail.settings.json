@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "one_two_ones",
+  "collectionName": "one_three_details",
   "info": {
-    "name": "one_two_one",
+    "name": "one_three_detail",
     "description": ""
   },
   "options": {
@@ -11,24 +11,23 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "product": {
+    "desc": {
       "type": "string"
     },
-    "percent": {
+    "code": {
       "type": "string"
     },
-    "odd": {
-      "type": "text"
+    "year_one": {
+      "type": "float"
     },
-    "weakness": {
-      "type": "text"
+    "year_two": {
+      "type": "float"
+    },
+    "year_three": {
+      "type": "float"
     },
     "parent_id": {
       "type": "string"
-    },
-    "one_two": {
-      "via": "one_two_ones",
-      "model": "one-two"
     }
   }
 }

@@ -14,15 +14,20 @@
     "one_one": {
       "unique": true,
       "columnName": "one_one",
-      "model": "main-info"
+      "model": "main-info",
+      "via": "maininfo"
     },
     "one_two": {
-      "unique": true,
+      "via": "maininfo",
       "columnName": "one_two",
       "model": "one-two"
     },
+    "edp_request": {
+      "model": "edp-request",
+      "via": "maininfo"
+    },
     "parent_id": {
-      "type": "biginteger"
+      "type": "string"
     }
   }
 }

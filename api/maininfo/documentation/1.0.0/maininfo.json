@@ -588,7 +588,10 @@
                 "type": "string"
               },
               "parent_id": {
-                "type": "integer"
+                "type": "string"
+              },
+              "maininfo": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -610,13 +613,56 @@
                 "type": "string"
               },
               "one_two_ones": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "one_two_twos": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_two_threes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "parent_id": {
+                "type": "string"
+              },
+              "maininfo": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "edp_request": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name_comp": {
+                "type": "string"
+              },
+              "user_id": {
                 "type": "integer"
+              },
+              "maininfo": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -630,7 +676,7 @@
             }
           },
           "parent_id": {
-            "type": "integer"
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -646,8 +692,11 @@
           "one_two": {
             "type": "string"
           },
+          "edp_request": {
+            "type": "string"
+          },
           "parent_id": {
-            "type": "integer"
+            "type": "string"
           },
           "published_at": {
             "type": "string",

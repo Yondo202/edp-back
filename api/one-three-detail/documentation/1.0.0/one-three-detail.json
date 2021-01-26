@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/main-infos": {
+    "/one-three-details": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Main-info"
+          "One-three-detail"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Main-info"
+          "One-three-detail"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMain-info"
+                "$ref": "#/components/schemas/NewOne-three-detail"
               }
             }
           }
         }
       }
     },
-    "/main-infos/count": {
+    "/one-three-details/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Main-info"
+          "One-three-detail"
         ],
         "parameters": []
       }
     },
-    "/main-infos/{id}": {
+    "/one-three-details/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Main-info"
+          "One-three-detail"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Main-info"
+          "One-three-detail"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewMain-info"
+                "$ref": "#/components/schemas/NewOne-three-detail"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Main-info"
+          "One-three-detail"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Main-info": {
+      "One-three-detail": {
         "required": [
           "id"
         ],
@@ -535,98 +535,23 @@
           "id": {
             "type": "string"
           },
-          "comp_name": {
+          "desc": {
             "type": "string"
           },
-          "comp_response": {
+          "code": {
             "type": "string"
           },
-          "invest": {
-            "type": "string"
+          "year_one": {
+            "type": "number"
           },
-          "register": {
-            "type": "integer"
+          "year_two": {
+            "type": "number"
           },
-          "main_direction": {
-            "type": "string"
-          },
-          "help_direction": {
-            "type": "string"
-          },
-          "help_direction2": {
-            "type": "string"
-          },
-          "start_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "export_start_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "vision": {
-            "type": "string"
-          },
-          "purpose": {
-            "type": "string"
-          },
-          "history": {
-            "type": "string"
-          },
-          "revenue": {
-            "type": "integer"
-          },
-          "workpeople_num": {
-            "type": "integer"
-          },
-          "email": {
-            "type": "string"
-          },
-          "social_acc": {
-            "type": "string"
-          },
-          "top_product1": {
-            "type": "string"
-          },
-          "top_product2": {
-            "type": "string"
-          },
-          "add_desc": {
-            "type": "string"
+          "year_three": {
+            "type": "number"
           },
           "parent_id": {
             "type": "string"
-          },
-          "maininfo": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "one_one": {
-                "type": "string"
-              },
-              "one_two": {
-                "type": "string"
-              },
-              "edp_request": {
-                "type": "string"
-              },
-              "parent_id": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "published_at": {
             "type": "string",
@@ -634,71 +559,24 @@
           }
         }
       },
-      "NewMain-info": {
+      "NewOne-three-detail": {
         "properties": {
-          "comp_name": {
+          "desc": {
             "type": "string"
           },
-          "comp_response": {
+          "code": {
             "type": "string"
           },
-          "invest": {
-            "type": "string"
+          "year_one": {
+            "type": "number"
           },
-          "register": {
-            "type": "integer"
+          "year_two": {
+            "type": "number"
           },
-          "main_direction": {
-            "type": "string"
-          },
-          "help_direction": {
-            "type": "string"
-          },
-          "help_direction2": {
-            "type": "string"
-          },
-          "start_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "export_start_date": {
-            "type": "string",
-            "format": "date"
-          },
-          "vision": {
-            "type": "string"
-          },
-          "purpose": {
-            "type": "string"
-          },
-          "history": {
-            "type": "string"
-          },
-          "revenue": {
-            "type": "integer"
-          },
-          "workpeople_num": {
-            "type": "integer"
-          },
-          "email": {
-            "type": "string"
-          },
-          "social_acc": {
-            "type": "string"
-          },
-          "top_product1": {
-            "type": "string"
-          },
-          "top_product2": {
-            "type": "string"
-          },
-          "add_desc": {
-            "type": "string"
+          "year_three": {
+            "type": "number"
           },
           "parent_id": {
-            "type": "string"
-          },
-          "maininfo": {
             "type": "string"
           },
           "published_at": {
