@@ -678,6 +678,52 @@
           "parent_id": {
             "type": "string"
           },
+          "one_three_details": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "year_one": {
+                  "type": "number"
+                },
+                "year_two": {
+                  "type": "number"
+                },
+                "year_three": {
+                  "type": "number"
+                },
+                "parent_id": {
+                  "type": "string"
+                },
+                "one_three": {
+                  "type": "string"
+                },
+                "maininfo": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -697,6 +743,12 @@
           },
           "parent_id": {
             "type": "string"
+          },
+          "one_three_details": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

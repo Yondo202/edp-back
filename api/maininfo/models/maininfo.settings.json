@@ -18,9 +18,9 @@
       "via": "maininfo"
     },
     "one_two": {
-      "via": "maininfo",
       "columnName": "one_two",
-      "model": "one-two"
+      "model": "one-two",
+      "via": "maininfo"
     },
     "edp_request": {
       "model": "edp-request",
@@ -28,6 +28,10 @@
     },
     "parent_id": {
       "type": "string"
+    },
+    "one_three_details": {
+      "collection": "one-three-detail",
+      "via": "maininfo"
     }
   }
 }

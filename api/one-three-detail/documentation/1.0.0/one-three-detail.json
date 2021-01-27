@@ -553,6 +553,71 @@
           "parent_id": {
             "type": "string"
           },
+          "one_three": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "maininfo": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "one_one": {
+                "type": "string"
+              },
+              "one_two": {
+                "type": "string"
+              },
+              "edp_request": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -577,6 +642,12 @@
             "type": "number"
           },
           "parent_id": {
+            "type": "string"
+          },
+          "one_three": {
+            "type": "string"
+          },
+          "maininfo": {
             "type": "string"
           },
           "published_at": {

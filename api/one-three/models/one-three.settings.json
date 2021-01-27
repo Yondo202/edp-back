@@ -11,23 +11,12 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "desc": {
-      "type": "text"
-    },
-    "code": {
-      "type": "string"
-    },
-    "year2018": {
-      "type": "string"
-    },
-    "year2019": {
-      "type": "string"
-    },
-    "year2020": {
-      "type": "string"
-    },
     "parent_id": {
       "type": "string"
+    },
+    "one_three_details": {
+      "collection": "one-three-detail",
+      "via": "one_three"
     }
   }
 }

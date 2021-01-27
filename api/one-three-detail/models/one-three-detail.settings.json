@@ -28,6 +28,14 @@
     },
     "parent_id": {
       "type": "string"
+    },
+    "one_three": {
+      "via": "one_three_details",
+      "model": "one-three"
+    },
+    "maininfo": {
+      "via": "one_three_details",
+      "model": "maininfo"
     }
   }
 }

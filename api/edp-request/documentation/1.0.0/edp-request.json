@@ -561,6 +561,12 @@
               "parent_id": {
                 "type": "string"
               },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },

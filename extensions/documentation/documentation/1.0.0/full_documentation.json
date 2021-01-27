@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/26/2021 4:15:05 PM"
+    "x-generation-date": "01/27/2021 3:03:10 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6883,6 +6883,12 @@
               "parent_id": {
                 "type": "string"
               },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -7012,6 +7018,12 @@
               },
               "parent_id": {
                 "type": "string"
+              },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -7273,6 +7285,52 @@
           "parent_id": {
             "type": "string"
           },
+          "one_three_details": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "year_one": {
+                  "type": "number"
+                },
+                "year_two": {
+                  "type": "number"
+                },
+                "year_three": {
+                  "type": "number"
+                },
+                "parent_id": {
+                  "type": "string"
+                },
+                "one_three": {
+                  "type": "string"
+                },
+                "maininfo": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7292,6 +7350,12 @@
           },
           "parent_id": {
             "type": "string"
+          },
+          "one_three_details": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -7331,6 +7395,71 @@
           "parent_id": {
             "type": "string"
           },
+          "one_three": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "maininfo": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "one_one": {
+                "type": "string"
+              },
+              "one_two": {
+                "type": "string"
+              },
+              "edp_request": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7357,6 +7486,12 @@
           "parent_id": {
             "type": "string"
           },
+          "one_three": {
+            "type": "string"
+          },
+          "maininfo": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -7377,23 +7512,54 @@
           "id": {
             "type": "string"
           },
-          "desc": {
-            "type": "string"
-          },
-          "code": {
-            "type": "string"
-          },
-          "year2018": {
-            "type": "string"
-          },
-          "year2019": {
-            "type": "string"
-          },
-          "year2020": {
-            "type": "string"
-          },
           "parent_id": {
             "type": "string"
+          },
+          "one_three_details": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "year_one": {
+                  "type": "number"
+                },
+                "year_two": {
+                  "type": "number"
+                },
+                "year_three": {
+                  "type": "number"
+                },
+                "parent_id": {
+                  "type": "string"
+                },
+                "one_three": {
+                  "type": "string"
+                },
+                "maininfo": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -7403,23 +7569,14 @@
       },
       "NewOne-three": {
         "properties": {
-          "desc": {
-            "type": "string"
-          },
-          "code": {
-            "type": "string"
-          },
-          "year2018": {
-            "type": "string"
-          },
-          "year2019": {
-            "type": "string"
-          },
-          "year2020": {
-            "type": "string"
-          },
           "parent_id": {
             "type": "string"
+          },
+          "one_three_details": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
@@ -7850,6 +8007,12 @@
               },
               "parent_id": {
                 "type": "string"
+              },
+              "one_three_details": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

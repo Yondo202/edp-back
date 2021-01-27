@@ -27,8 +27,8 @@
       "type": "string"
     },
     "maininfo": {
-      "model": "maininfo",
-      "via": "one_two"
+      "via": "one_two",
+      "model": "maininfo"
     }
   }
 }
