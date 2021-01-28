@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/one-four-advantages",
+      "handler": "one-four-advantage.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-advantages/count",
+      "handler": "one-four-advantage.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-advantages/:id",
+      "handler": "one-four-advantage.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/one-four-advantages",
+      "handler": "one-four-advantage.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/one-four-advantages/:id",
+      "handler": "one-four-advantage.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/one-four-advantages/:id",
+      "handler": "one-four-advantage.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

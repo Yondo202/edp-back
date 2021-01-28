@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/one-threes": {
+    "/one-four-advantages": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three"
+          "One-four-advantage"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three"
+          "One-four-advantage"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOne-three"
+                "$ref": "#/components/schemas/NewOne-four-advantage"
               }
             }
           }
         }
       }
     },
-    "/one-threes/count": {
+    "/one-four-advantages/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "One-three"
+          "One-four-advantage"
         ],
         "parameters": []
       }
     },
-    "/one-threes/{id}": {
+    "/one-four-advantages/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three"
+          "One-four-advantage"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three"
+          "One-four-advantage"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOne-three"
+                "$ref": "#/components/schemas/NewOne-four-advantage"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three"
+          "One-four-advantage"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "One-three": {
+      "One-four-advantage": {
         "required": [
           "id"
         ],
@@ -535,52 +535,55 @@
           "id": {
             "type": "string"
           },
-          "parent_id": {
+          "desc": {
             "type": "string"
           },
-          "one_three_details": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "desc": {
-                  "type": "string"
-                },
-                "code": {
-                  "type": "string"
-                },
-                "year_one": {
-                  "type": "number"
-                },
-                "year_two": {
-                  "type": "number"
-                },
-                "year_three": {
-                  "type": "number"
-                },
-                "parent_id": {
-                  "type": "string"
-                },
-                "one_three": {
-                  "type": "string"
-                },
-                "maininfo": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
+          "code": {
+            "type": "string"
+          },
+          "no": {
+            "type": "integer"
+          },
+          "notknow": {
+            "type": "integer"
+          },
+          "yes": {
+            "type": "integer"
+          },
+          "score": {
+            "type": "integer"
+          },
+          "bracket": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          },
+          "one_four": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "one_four_advantages": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -590,16 +593,34 @@
           }
         }
       },
-      "NewOne-three": {
+      "NewOne-four-advantage": {
         "properties": {
-          "parent_id": {
+          "desc": {
             "type": "string"
           },
-          "one_three_details": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "code": {
+            "type": "string"
+          },
+          "no": {
+            "type": "integer"
+          },
+          "notknow": {
+            "type": "integer"
+          },
+          "yes": {
+            "type": "integer"
+          },
+          "score": {
+            "type": "integer"
+          },
+          "bracket": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          },
+          "one_four": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

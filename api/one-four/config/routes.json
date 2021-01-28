@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/one-threes",
-      "handler": "one-three.find",
+      "path": "/one-fours",
+      "handler": "one-four.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/one-threes/count",
-      "handler": "one-three.count",
+      "path": "/one-fours/count",
+      "handler": "one-four.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/one-threes/:id",
-      "handler": "one-three.findOne",
+      "path": "/one-fours/:id",
+      "handler": "one-four.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/one-threes",
-      "handler": "one-three.create",
+      "path": "/one-fours",
+      "handler": "one-four.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/one-threes/:id",
-      "handler": "one-three.update",
+      "path": "/one-fours/:id",
+      "handler": "one-four.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/one-threes/:id",
-      "handler": "one-three.delete",
+      "path": "/one-fours/:id",
+      "handler": "one-four.delete",
       "config": {
         "policies": []
       }

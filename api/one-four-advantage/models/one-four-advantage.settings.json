@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "one_four_advantages",
+  "info": {
+    "name": "One_four_advantage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "desc": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "no": {
+      "type": "integer"
+    },
+    "notknow": {
+      "type": "integer"
+    },
+    "yes": {
+      "type": "integer"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "bracket": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    },
+    "one_four": {
+      "via": "one_four_advantages",
+      "model": "one-four"
+    }
+  }
+}

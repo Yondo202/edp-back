@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "one_threes",
+  "collectionName": "one_fours",
   "info": {
-    "name": "One_three",
+    "name": "one_four",
     "description": ""
   },
   "options": {
@@ -14,9 +14,9 @@
     "parent_id": {
       "type": "string"
     },
-    "one_three_details": {
-      "collection": "one-three-detail",
-      "via": "one_three"
+    "one_four_advantages": {
+      "collection": "one-four-advantage",
+      "via": "one_four"
     }
   }
 }

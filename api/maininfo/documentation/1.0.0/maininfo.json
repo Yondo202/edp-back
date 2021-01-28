@@ -706,9 +706,6 @@
                 "parent_id": {
                   "type": "string"
                 },
-                "one_three": {
-                  "type": "string"
-                },
                 "maininfo": {
                   "type": "string"
                 },
