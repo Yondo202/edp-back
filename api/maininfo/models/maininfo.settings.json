@@ -32,6 +32,10 @@
     "one_three_details": {
       "collection": "one-three-detail",
       "via": "maininfo"
+    },
+    "one_four": {
+      "via": "maininfo",
+      "model": "one-four"
     }
   }
 }

@@ -721,6 +721,55 @@
               }
             }
           },
+          "one_four": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": "string"
+              },
+              "one_four_advantages": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "maininfo": {
+                "type": "string"
+              },
+              "one_four_weaknesses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_four_chances": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_four_problems": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -746,6 +795,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "one_four": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

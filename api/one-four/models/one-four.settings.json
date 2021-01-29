@@ -17,6 +17,22 @@
     "one_four_advantages": {
       "collection": "one-four-advantage",
       "via": "one_four"
+    },
+    "maininfo": {
+      "model": "maininfo",
+      "via": "one_four"
+    },
+    "one_four_weaknesses": {
+      "collection": "one-four-weakness",
+      "via": "one_four"
+    },
+    "one_four_chances": {
+      "collection": "one-four-chance",
+      "via": "one_four"
+    },
+    "one_four_problems": {
+      "collection": "one-four-problem",
+      "via": "one_four"
     }
   }
 }

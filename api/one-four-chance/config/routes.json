@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/one-four-chances",
+      "handler": "one-four-chance.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-chances/count",
+      "handler": "one-four-chance.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-chances/:id",
+      "handler": "one-four-chance.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/one-four-chances",
+      "handler": "one-four-chance.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/one-four-chances/:id",
+      "handler": "one-four-chance.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/one-four-chances/:id",
+      "handler": "one-four-chance.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

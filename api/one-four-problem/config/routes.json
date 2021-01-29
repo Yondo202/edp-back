@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/one-four-problems",
+      "handler": "one-four-problem.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-problems/count",
+      "handler": "one-four-problem.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-problems/:id",
+      "handler": "one-four-problem.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/one-four-problems",
+      "handler": "one-four-problem.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/one-four-problems/:id",
+      "handler": "one-four-problem.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/one-four-problems/:id",
+      "handler": "one-four-problem.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

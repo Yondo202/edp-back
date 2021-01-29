@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/edp-requests": {
+    "/one-four-weaknesses": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "One-four-weakness"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "One-four-weakness"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEdp-request"
+                "$ref": "#/components/schemas/NewOne-four-weakness"
               }
             }
           }
         }
       }
     },
-    "/edp-requests/count": {
+    "/one-four-weaknesses/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "One-four-weakness"
         ],
         "parameters": []
       }
     },
-    "/edp-requests/{id}": {
+    "/one-four-weaknesses/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "One-four-weakness"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "One-four-weakness"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEdp-request"
+                "$ref": "#/components/schemas/NewOne-four-weakness"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "One-four-weakness"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Edp-request": {
+      "One-four-weakness": {
         "required": [
           "id"
         ],
@@ -535,13 +535,34 @@
           "id": {
             "type": "string"
           },
-          "name_comp": {
+          "desc": {
             "type": "string"
           },
-          "user_id": {
+          "bracket": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "no": {
             "type": "integer"
           },
-          "maininfo": {
+          "notknow": {
+            "type": "integer"
+          },
+          "yes": {
+            "type": "integer"
+          },
+          "score": {
+            "type": "integer"
+          },
+          "parent_id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          },
+          "one_four": {
             "required": [
               "id"
             ],
@@ -549,26 +570,35 @@
               "id": {
                 "type": "string"
               },
-              "one_one": {
-                "type": "string"
-              },
-              "one_two": {
-                "type": "string"
-              },
-              "edp_request": {
-                "type": "string"
-              },
               "parent_id": {
                 "type": "string"
               },
-              "one_three_details": {
+              "one_four_advantages": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-              "one_four": {
+              "maininfo": {
                 "type": "string"
+              },
+              "one_four_weaknesses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_four_chances": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_four_problems": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
@@ -587,15 +617,36 @@
           }
         }
       },
-      "NewEdp-request": {
+      "NewOne-four-weakness": {
         "properties": {
-          "name_comp": {
+          "desc": {
             "type": "string"
           },
-          "user_id": {
+          "bracket": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "no": {
             "type": "integer"
           },
-          "maininfo": {
+          "notknow": {
+            "type": "integer"
+          },
+          "yes": {
+            "type": "integer"
+          },
+          "score": {
+            "type": "integer"
+          },
+          "parent_id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          },
+          "one_four": {
             "type": "string"
           },
           "published_at": {

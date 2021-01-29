@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/one-four-weaknesses",
+      "handler": "one-four-weakness.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-weaknesses/count",
+      "handler": "one-four-weakness.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-four-weaknesses/:id",
+      "handler": "one-four-weakness.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/one-four-weaknesses",
+      "handler": "one-four-weakness.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/one-four-weaknesses/:id",
+      "handler": "one-four-weakness.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/one-four-weaknesses/:id",
+      "handler": "one-four-weakness.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

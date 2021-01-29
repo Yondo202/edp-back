@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "one_four_advantages",
+  "collectionName": "one_four_chances",
   "info": {
-    "name": "One_four_advantage",
-    "description": ""
+    "name": "one_four_chance"
   },
   "options": {
     "increments": true,
@@ -11,10 +10,19 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "value": {
+      "type": "integer"
+    },
     "desc": {
       "type": "string"
     },
-    "code": {
+    "bracket": {
       "type": "string"
     },
     "no": {
@@ -29,18 +37,9 @@
     "score": {
       "type": "integer"
     },
-    "bracket": {
-      "type": "string"
-    },
-    "value": {
-      "type": "integer"
-    },
     "one_four": {
-      "via": "one_four_advantages",
+      "via": "one_four_chances",
       "model": "one-four"
-    },
-    "parent_id": {
-      "type": "string"
     }
   }
 }

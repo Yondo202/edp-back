@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "one_four_advantages",
+  "collectionName": "one_four_weaknesses",
   "info": {
-    "name": "One_four_advantage",
+    "name": "one_four_weakness",
     "description": ""
   },
   "options": {
@@ -12,6 +12,9 @@
   },
   "attributes": {
     "desc": {
+      "type": "string"
+    },
+    "bracket": {
       "type": "string"
     },
     "code": {
@@ -29,18 +32,15 @@
     "score": {
       "type": "integer"
     },
-    "bracket": {
+    "parent_id": {
       "type": "string"
     },
     "value": {
       "type": "integer"
     },
     "one_four": {
-      "via": "one_four_advantages",
+      "via": "one_four_weaknesses",
       "model": "one-four"
-    },
-    "parent_id": {
-      "type": "string"
     }
   }
 }

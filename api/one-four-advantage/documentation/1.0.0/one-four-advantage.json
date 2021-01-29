@@ -576,6 +576,27 @@
                   "type": "string"
                 }
               },
+              "maininfo": {
+                "type": "string"
+              },
+              "one_four_weaknesses": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_four_chances": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "one_four_problems": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -586,6 +607,9 @@
                 "type": "string"
               }
             }
+          },
+          "parent_id": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -620,6 +644,9 @@
             "type": "integer"
           },
           "one_four": {
+            "type": "string"
+          },
+          "parent_id": {
             "type": "string"
           },
           "published_at": {
