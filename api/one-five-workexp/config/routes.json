@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/one-five-workexps",
+      "handler": "one-five-workexp.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-five-workexps/count",
+      "handler": "one-five-workexp.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-five-workexps/:id",
+      "handler": "one-five-workexp.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/one-five-workexps",
+      "handler": "one-five-workexp.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/one-five-workexps/:id",
+      "handler": "one-five-workexp.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/one-five-workexps/:id",
+      "handler": "one-five-workexp.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

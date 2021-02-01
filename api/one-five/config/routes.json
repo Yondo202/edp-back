@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/one-fives",
+      "handler": "one-five.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-fives/count",
+      "handler": "one-five.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/one-fives/:id",
+      "handler": "one-five.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/one-fives",
+      "handler": "one-five.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/one-fives/:id",
+      "handler": "one-five.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/one-fives/:id",
+      "handler": "one-five.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -36,6 +36,10 @@
     "one_four": {
       "via": "maininfo",
       "model": "one-four"
+    },
+    "one_fives": {
+      "via": "maininfo",
+      "collection": "one-five"
     }
   }
 }

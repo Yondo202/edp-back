@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "one_five_edus",
+  "info": {
+    "name": "one_five_edu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "where": {
+      "type": "string"
+    },
+    "which": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "one_five": {
+      "via": "one_five_edus",
+      "model": "one-five"
+    }
+  }
+}

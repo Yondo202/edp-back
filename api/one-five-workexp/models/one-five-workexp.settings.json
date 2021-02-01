@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "one_five_workexps",
+  "info": {
+    "name": "one_five_workexp"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "parent_id": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "where": {
+      "type": "string"
+    },
+    "which": {
+      "type": "string"
+    },
+    "one_five": {
+      "via": "one_five_workexps",
+      "model": "one-five"
+    }
+  }
+}

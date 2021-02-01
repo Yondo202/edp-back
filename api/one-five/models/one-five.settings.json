@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "one_fives",
+  "info": {
+    "name": "one_five",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "parent_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "parent_name": {
+      "type": "string"
+    },
+    "job_position": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "one_five_edus": {
+      "collection": "one-five-edu",
+      "via": "one_five"
+    },
+    "one_five_workexps": {
+      "collection": "one-five-workexp",
+      "via": "one_five"
+    },
+    "maininfo": {
+      "model": "maininfo",
+      "via": "one_fives"
+    }
+  }
+}

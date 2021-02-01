@@ -770,6 +770,58 @@
               }
             }
           },
+          "one_fives": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "parent_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "parent_name": {
+                  "type": "string"
+                },
+                "job_position": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "one_five_edus": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "one_five_workexps": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "maininfo": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -798,6 +850,12 @@
           },
           "one_four": {
             "type": "string"
+          },
+          "one_fives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

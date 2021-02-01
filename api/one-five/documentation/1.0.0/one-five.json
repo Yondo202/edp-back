@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/one-three-details": {
+    "/one-fives": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three-detail"
+          "One-five"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three-detail"
+          "One-five"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOne-three-detail"
+                "$ref": "#/components/schemas/NewOne-five"
               }
             }
           }
         }
       }
     },
-    "/one-three-details/count": {
+    "/one-fives/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "One-three-detail"
+          "One-five"
         ],
         "parameters": []
       }
     },
-    "/one-three-details/{id}": {
+    "/one-fives/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three-detail"
+          "One-five"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three-detail"
+          "One-five"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOne-three-detail"
+                "$ref": "#/components/schemas/NewOne-five"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "One-three-detail"
+          "One-five"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "One-three-detail": {
+      "One-five": {
         "required": [
           "id"
         ],
@@ -535,23 +535,100 @@
           "id": {
             "type": "string"
           },
-          "desc": {
-            "type": "string"
-          },
-          "code": {
-            "type": "string"
-          },
-          "year_one": {
-            "type": "number"
-          },
-          "year_two": {
-            "type": "number"
-          },
-          "year_three": {
-            "type": "number"
-          },
           "parent_id": {
             "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "parent_name": {
+            "type": "string"
+          },
+          "job_position": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "one_five_edus": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "start_date": {
+                  "type": "string"
+                },
+                "end_date": {
+                  "type": "string"
+                },
+                "where": {
+                  "type": "string"
+                },
+                "which": {
+                  "type": "string"
+                },
+                "parent_id": {
+                  "type": "string"
+                },
+                "one_five": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "one_five_workexps": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "parent_id": {
+                  "type": "string"
+                },
+                "start_date": {
+                  "type": "string"
+                },
+                "end_date": {
+                  "type": "string"
+                },
+                "where": {
+                  "type": "string"
+                },
+                "which": {
+                  "type": "string"
+                },
+                "one_five": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "maininfo": {
             "required": [
@@ -605,25 +682,34 @@
           }
         }
       },
-      "NewOne-three-detail": {
+      "NewOne-five": {
         "properties": {
-          "desc": {
-            "type": "string"
-          },
-          "code": {
-            "type": "string"
-          },
-          "year_one": {
-            "type": "number"
-          },
-          "year_two": {
-            "type": "number"
-          },
-          "year_three": {
-            "type": "number"
-          },
           "parent_id": {
             "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "parent_name": {
+            "type": "string"
+          },
+          "job_position": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "one_five_edus": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "one_five_workexps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "maininfo": {
             "type": "string"
