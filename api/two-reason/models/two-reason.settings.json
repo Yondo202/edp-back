@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "two_reasons",
+  "info": {
+    "name": "two_one",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "desc": {
+      "type": "richtext"
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "two_parent": {
+      "via": "two_one",
+      "model": "mainmarket"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/two-reasons",
+      "handler": "two-reason.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/two-reasons/count",
+      "handler": "two-reason.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/two-reasons/:id",
+      "handler": "two-reason.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/two-reasons",
+      "handler": "two-reason.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/two-reasons/:id",
+      "handler": "two-reason.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/two-reasons/:id",
+      "handler": "two-reason.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -664,6 +664,12 @@
               "maininfo": {
                 "type": "string"
               },
+              "two_parents": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "two_twos",
+  "info": {
+    "name": "two_two"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "quality": {
+      "type": "biginteger"
+    },
+    "service": {
+      "type": "biginteger"
+    },
+    "marketing": {
+      "type": "biginteger"
+    },
+    "product_choice": {
+      "type": "biginteger"
+    },
+    "Distribution": {
+      "type": "biginteger"
+    },
+    "total_score": {
+      "type": "biginteger"
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "two_parent": {
+      "model": "mainmarket",
+      "via": "two_twos"
+    }
+  }
+}

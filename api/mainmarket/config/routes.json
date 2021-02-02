@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mainmarkets",
+      "handler": "mainmarket.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainmarkets/count",
+      "handler": "mainmarket.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mainmarkets/:id",
+      "handler": "mainmarket.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mainmarkets",
+      "handler": "mainmarket.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mainmarkets/:id",
+      "handler": "mainmarket.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mainmarkets/:id",
+      "handler": "mainmarket.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

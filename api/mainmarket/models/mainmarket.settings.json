@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mainmarkets",
+  "info": {
+    "name": "two_parent",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "parent_id": {
+      "type": "string"
+    },
+    "edp_request": {
+      "model": "edp-request",
+      "via": "two_parents"
+    },
+    "two_one": {
+      "model": "two-reason",
+      "via": "two_parent"
+    },
+    "two_twos": {
+      "via": "two_parent",
+      "collection": "two-two"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/edp-requests": {
+    "/two-twos": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "Two-two"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "Two-two"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEdp-request"
+                "$ref": "#/components/schemas/NewTwo-two"
               }
             }
           }
         }
       }
     },
-    "/edp-requests/count": {
+    "/two-twos/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "Two-two"
         ],
         "parameters": []
       }
     },
-    "/edp-requests/{id}": {
+    "/two-twos/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "Two-two"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "Two-two"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEdp-request"
+                "$ref": "#/components/schemas/NewTwo-two"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Edp-request"
+          "Two-two"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Edp-request": {
+      "Two-two": {
         "required": [
           "id"
         ],
@@ -535,13 +535,34 @@
           "id": {
             "type": "string"
           },
-          "name_comp": {
+          "name": {
             "type": "string"
           },
-          "user_id": {
+          "price": {
             "type": "integer"
           },
-          "maininfo": {
+          "quality": {
+            "type": "integer"
+          },
+          "service": {
+            "type": "integer"
+          },
+          "marketing": {
+            "type": "integer"
+          },
+          "product_choice": {
+            "type": "integer"
+          },
+          "Distribution": {
+            "type": "integer"
+          },
+          "total_score": {
+            "type": "integer"
+          },
+          "parent_id": {
+            "type": "string"
+          },
+          "two_parent": {
             "required": [
               "id"
             ],
@@ -549,28 +570,16 @@
               "id": {
                 "type": "string"
               },
-              "one_one": {
-                "type": "string"
-              },
-              "one_two": {
+              "parent_id": {
                 "type": "string"
               },
               "edp_request": {
                 "type": "string"
               },
-              "parent_id": {
+              "two_one": {
                 "type": "string"
               },
-              "one_three_details": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "one_four": {
-                "type": "string"
-              },
-              "one_fives": {
+              "two_twos": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -587,65 +596,43 @@
               }
             }
           },
-          "two_parents": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "parent_id": {
-                  "type": "string"
-                },
-                "edp_request": {
-                  "type": "string"
-                },
-                "two_one": {
-                  "type": "string"
-                },
-                "two_twos": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewEdp-request": {
+      "NewTwo-two": {
         "properties": {
-          "name_comp": {
+          "name": {
             "type": "string"
           },
-          "user_id": {
+          "price": {
             "type": "integer"
           },
-          "maininfo": {
+          "quality": {
+            "type": "integer"
+          },
+          "service": {
+            "type": "integer"
+          },
+          "marketing": {
+            "type": "integer"
+          },
+          "product_choice": {
+            "type": "integer"
+          },
+          "Distribution": {
+            "type": "integer"
+          },
+          "total_score": {
+            "type": "integer"
+          },
+          "parent_id": {
             "type": "string"
           },
-          "two_parents": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "two_parent": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

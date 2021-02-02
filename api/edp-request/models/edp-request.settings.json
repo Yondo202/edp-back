@@ -20,6 +20,10 @@
     "maininfo": {
       "via": "edp_request",
       "model": "maininfo"
+    },
+    "two_parents": {
+      "via": "edp_request",
+      "collection": "mainmarket"
     }
   }
 }
