@@ -25,6 +25,10 @@
     "two_twos": {
       "via": "two_parent",
       "collection": "two-two"
+    },
+    "two_threes": {
+      "via": "two_parent",
+      "collection": "two-three"
     }
   }
 }

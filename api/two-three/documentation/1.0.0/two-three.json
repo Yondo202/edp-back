@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/two-twos": {
+    "/two-threes": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Two-two"
+          "Two-three"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Two-two"
+          "Two-three"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTwo-two"
+                "$ref": "#/components/schemas/NewTwo-three"
               }
             }
           }
         }
       }
     },
-    "/two-twos/count": {
+    "/two-threes/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Two-two"
+          "Two-three"
         ],
         "parameters": []
       }
     },
-    "/two-twos/{id}": {
+    "/two-threes/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Two-two"
+          "Two-three"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Two-two"
+          "Two-three"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTwo-two"
+                "$ref": "#/components/schemas/NewTwo-three"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Two-two"
+          "Two-three"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Two-two": {
+      "Two-three": {
         "required": [
           "id"
         ],
@@ -535,32 +535,23 @@
           "id": {
             "type": "string"
           },
+          "parent_id": {
+            "type": "string"
+          },
           "name": {
             "type": "string"
           },
-          "price": {
+          "user_count": {
             "type": "integer"
           },
-          "quality": {
+          "once_amount": {
             "type": "integer"
           },
-          "service": {
+          "year_count": {
             "type": "integer"
           },
-          "marketing": {
+          "market_size": {
             "type": "integer"
-          },
-          "product_choice": {
-            "type": "integer"
-          },
-          "distribution": {
-            "type": "integer"
-          },
-          "total_score": {
-            "type": "number"
-          },
-          "parent_id": {
-            "type": "string"
           },
           "two_parent": {
             "required": [
@@ -608,34 +599,25 @@
           }
         }
       },
-      "NewTwo-two": {
+      "NewTwo-three": {
         "properties": {
+          "parent_id": {
+            "type": "string"
+          },
           "name": {
             "type": "string"
           },
-          "price": {
+          "user_count": {
             "type": "integer"
           },
-          "quality": {
+          "once_amount": {
             "type": "integer"
           },
-          "service": {
+          "year_count": {
             "type": "integer"
           },
-          "marketing": {
+          "market_size": {
             "type": "integer"
-          },
-          "product_choice": {
-            "type": "integer"
-          },
-          "distribution": {
-            "type": "integer"
-          },
-          "total_score": {
-            "type": "number"
-          },
-          "parent_id": {
-            "type": "string"
           },
           "two_parent": {
             "type": "string"

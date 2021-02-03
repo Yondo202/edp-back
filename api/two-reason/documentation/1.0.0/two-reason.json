@@ -564,6 +564,12 @@
                   "type": "string"
                 }
               },
+              "two_threes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },

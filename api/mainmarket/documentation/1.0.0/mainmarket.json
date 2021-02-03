@@ -615,14 +615,57 @@
                 "product_choice": {
                   "type": "integer"
                 },
-                "Distribution": {
+                "distribution": {
                   "type": "integer"
                 },
                 "total_score": {
-                  "type": "integer"
+                  "type": "number"
                 },
                 "parent_id": {
                   "type": "string"
+                },
+                "two_parent": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "two_threes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "parent_id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "user_count": {
+                  "type": "integer"
+                },
+                "once_amount": {
+                  "type": "integer"
+                },
+                "year_count": {
+                  "type": "integer"
+                },
+                "market_size": {
+                  "type": "integer"
                 },
                 "two_parent": {
                   "type": "string"
@@ -657,6 +700,12 @@
             "type": "string"
           },
           "two_twos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "two_threes": {
             "type": "array",
             "items": {
               "type": "string"

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "two_twos",
+  "collectionName": "two_threes",
   "info": {
-    "name": "two_two",
+    "name": "two_three",
     "description": ""
   },
   "options": {
@@ -11,36 +11,27 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "price": {
-      "type": "biginteger"
-    },
-    "quality": {
-      "type": "biginteger"
-    },
-    "service": {
-      "type": "biginteger"
-    },
-    "marketing": {
-      "type": "biginteger"
-    },
-    "product_choice": {
-      "type": "biginteger"
-    },
-    "distribution": {
-      "type": "biginteger"
-    },
-    "total_score": {
-      "type": "decimal"
-    },
     "parent_id": {
       "type": "string"
     },
+    "name": {
+      "type": "string"
+    },
+    "user_count": {
+      "type": "biginteger"
+    },
+    "once_amount": {
+      "type": "biginteger"
+    },
+    "year_count": {
+      "type": "biginteger"
+    },
+    "market_size": {
+      "type": "biginteger"
+    },
     "two_parent": {
       "model": "mainmarket",
-      "via": "two_twos"
+      "via": "two_threes"
     }
   }
 }
